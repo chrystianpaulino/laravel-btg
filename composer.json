@@ -1,0 +1,33 @@
+{
+    "name": "beedelivery/btg",
+    "description": "Package for integration with BTG",
+    "keywords": ["laravel", "bee", "btg"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BeeDelivery\\Btg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Chrystian",
+            "email": "chrystianpaulino@beedelivery.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*",
+        "php": ">=7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Beedelivery\\Btg\\BtgServiceProvider"
+            ],
+            "aliases": {
+                "Btg": "Beedelivery\\Btg\\Facades\\Btg"
+            }
+        }
+    }
+}
